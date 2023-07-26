@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: docs-trustification-2hex
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: docs-trustification-2hex
+    app.kubernetes.io/part-of: trustification-2
+  name: docs-trustification-2hex
+spec:
+  ports:
+  - port: 8080
+    targetPort: 8080
+  selector:
+    app.kubernetes.io/instance: docs-trustification-2hex
+status:
+  loadBalancer: {}
