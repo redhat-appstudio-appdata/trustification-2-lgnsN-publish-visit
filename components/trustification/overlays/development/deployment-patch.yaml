@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: trustification
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/rh-trusted-content-tenant/trustification-2/trustification@sha256:e781b050a7ed5426a703f2bdf966c34e1ba1102d90c4924c3e47a19eb6ac0797
+        name: container-image
+        resources: {}
+status: {}
