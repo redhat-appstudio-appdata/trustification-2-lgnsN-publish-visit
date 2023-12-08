@@ -10,6 +10,7 @@ metadata:
     app.kubernetes.io/part-of: trustification-2
   name: trustification
 spec:
+  replicas: 1
   revisionHistoryLimit: 0
   selector:
     matchLabels:
